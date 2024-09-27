@@ -3,12 +3,14 @@ import schedule
 from app.db_init import init, close
 from app.monitor import run_monitoring
 
+
 # Функция для запуска задачи по мониторингу криптобирж
 async def job():
     try:
         await run_monitoring()
     except Exception as e:
         print(f"Ошибка при выполнении мониторинга: {e}")
+
 
 # Функция-планировщик для запуска выполнения задач каждые 10 минут
 async def start_scheduler():

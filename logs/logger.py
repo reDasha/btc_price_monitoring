@@ -6,6 +6,7 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 
+
 # Функция для получения логгера
 def get_logger(name):
     return logging.getLogger(name)

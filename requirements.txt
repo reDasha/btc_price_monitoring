@@ -12,14 +12,10 @@ frozenlist==1.4.1
 idna==3.9
 iso8601==1.1.0
 multidict==6.1.0
-mypy==1.11.2
-mypy-extensions==1.0.0
 pydantic==2.9.1
 pydantic_core==2.23.3
 pypika-tortoise==0.1.6
 pytz==2024.2
-ruff==0.6.7
-schedule==1.2.2
 tortoise==0.1.1
 tortoise-orm==0.21.6
 typing_extensions==4.12.2

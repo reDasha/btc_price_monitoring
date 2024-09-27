@@ -8,12 +8,13 @@ from logs.logger import get_logger
 
 logger = get_logger(__name__)
 
-# Функцяи отправки почты
+
+# Функция отправки почты
 async def send_email(pair, price, difference):
     currency = pair.split('/')[-1]
     subject = f"Price increase {pair}"
     body = (
-        f"Хорошие новости, Лакрица!\n\n"
+        f"Хорошие новости, друг!\n\n"
         f"Цена {pair} выросла на {difference}.\n"
         f"У тебя теперь {(price * 3):,.2f} {currency}. Пойдем тратить!\n"
     )

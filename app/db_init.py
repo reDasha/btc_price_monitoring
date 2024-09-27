@@ -4,6 +4,7 @@ from config.settings import DATABASE_URL
 from logs.logger import get_logger
 logger = get_logger(__name__)
 
+
 async def init():
     try:
         logger.info("Соединение с базой данных...")
@@ -16,6 +17,7 @@ async def init():
     except Exception as e:
         logger.error(f"Ошибка подключения к базе данных: {e}")
         raise
+
 
 async def close():
     try:

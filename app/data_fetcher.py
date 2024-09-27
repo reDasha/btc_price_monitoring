@@ -7,6 +7,7 @@ from logs.logger import get_logger
 
 logger = get_logger(__name__)
 
+
 # Асинхронная функция для получения данных по HTTP-запросу
 async def fetch_price(url, headers=None, params=None):
     try:
@@ -40,6 +41,7 @@ async def get_coinmarketcap_price(pair):
     response = await fetch_price(COINMARKETCAP_API_URL, headers=headers, params=parameters)
     return Decimal(response['data']['BTC']['quote'][converter]['price'])
 
+
 # Функция для получения цены BTC/USDT с биржи Gate.io
 async def get_gateio_price(pair):
     if pair == 'BTC/USDT':
@@ -49,6 +51,7 @@ async def get_gateio_price(pair):
     response = await fetch_price(f'{GATEIO_API_URL}?currency_pair={pair}')
     return Decimal(response[0]['last'])
 
+
 # Функция для получения цены BTC/USDT с биржи Bybit
 async def get_bybit_price(pair):
     if pair == 'BTC/USDT':
@@ -57,6 +60,7 @@ async def get_bybit_price(pair):
         return
     response = await fetch_price(f'{BYBIT_API_URL}?symbol={pair}')
     return Decimal(response['result']['price'])
+
 
 # Функция для получения цены BTC/USDT с биржи Kucoin
 async def get_kucoin_price(pair):

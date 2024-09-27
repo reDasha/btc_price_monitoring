@@ -14,12 +14,12 @@ fetch_funcs = [
     get_coinmarketcap_price
 ]
 
+
 # Функция для мониторинга цен разных валютных пар на пяти биржах
 async def run_monitoring():
     for fetch_func in fetch_funcs:
         for pair in pairs:
             current_price = await fetch_func(pair)
-
             if current_price:
                 last_price, difference = await save_to_db(current_price, pair)
                 if current_price > last_price * Decimal(1.0003):

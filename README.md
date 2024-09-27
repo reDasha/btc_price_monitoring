@@ -27,8 +27,8 @@
 ### 1. Клонируйте репозиторий
 
 ```bash
-git clone https://github.com/reDasha/btc-price-monitoring.git
-cd btc-price-monitoring
+git clone https://github.com/reDasha/btc_price_monitoring.git
+cd btc_price_monitoring
 ```
 
 ### 2. Создайте файл .env

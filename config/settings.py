@@ -12,10 +12,10 @@ MAIL_HOST = os.getenv('MAIL_HOST')
 MAIL_PORT = os.getenv('MAIL_PORT')
 EMAIL_SENDER = os.getenv('EMAIL_SENDER')
 EMAIL_RECIPIENT = os.getenv('EMAIL_RECIPIENT')
+COINMARKETCAP_API_KEY = os.getenv('COINMARKETCAP_API_KEY')
 
 BINANCE_API_URL = "https://api.binance.com/api/v3/ticker/price"
 COINMARKETCAP_API_URL = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest"
-COINMARKETCAP_API_KEY = '8cfef44f-eeb3-4229-bc79-70d7f3fbb5dd'
 GATEIO_API_URL = "https://api.gateio.ws/api/v4/spot/tickers"
 BYBIT_API_URL = "https://api.bybit.com/spot/v3/public/quote/ticker/price"
 KUCOIN_API_URL = "https://api.kucoin.com/api/v1/market/orderbook/level1"

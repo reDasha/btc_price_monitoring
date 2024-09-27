@@ -47,6 +47,7 @@ MAIL_HOST=mailcatcher
 MAIL_PORT=1025
 EMAIL_SENDER=user@yandex.ru
 EMAIL_RECIPIENT=user@yandex.ru
+COINMARKETCAP_API_KEY=your-api-key
 ```
 
 ### 3. Запустите проект
